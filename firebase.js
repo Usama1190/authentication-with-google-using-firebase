@@ -3,13 +3,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/fireba
 import { getAuth, signOut, GoogleAuthProvider  , sendPasswordResetEmail  , createUserWithEmailAndPassword, signInWithPopup ,  signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDAIkMK_AvH8SebTlf60qiG8w-S2l-kgko",
-    authDomain: "authentication-with-20222.firebaseapp.com",
-    projectId: "authentication-with-20222",
-    storageBucket: "authentication-with-20222.appspot.com",
-    messagingSenderId: "407379175103",
-    appId: "1:407379175103:web:bcdb3f9c0906724bf6480a",
-    measurementId: "G-TCCQM7JTKZ"
+    apiKey: "AIzaSyBsmzTbC-rnW1pq7gZZM6EdcxuJsie2nzY",
+    authDomain: "authentication-with-6348f.firebaseapp.com",
+    projectId: "authentication-with-6348f",
+    storageBucket: "authentication-with-6348f.appspot.com",
+    messagingSenderId: "599290225247",
+    appId: "1:599290225247:web:608f894a0ed057d72ff1ea",
+    measurementId: "G-HQHBGL81JE"
 };
 
 // Initialize Firebase
