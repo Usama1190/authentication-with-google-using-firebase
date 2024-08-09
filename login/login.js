@@ -1,4 +1,4 @@
-import { auth, sendPasswordResetEmail  , signInWithEmailAndPassword, onAuthStateChanged } from "../firebase.js";
+import { auth,  signInWithPopup , GoogleAuthProvider  ,  sendPasswordResetEmail  , signInWithEmailAndPassword, onAuthStateChanged } from "../firebase.js";
 
 let formField = document.querySelectorAll('form input');
 
@@ -9,6 +9,9 @@ let forgotPassword = document.getElementById('forgotPassword');
 let warning = document.getElementById('warning');
 
 let login_btn = document.getElementById('login_btn');
+
+
+let loginWithGoogle = document.getElementById('loginWithGoogle');
 
 const login = () => {
     event.preventDefault();
@@ -76,7 +79,27 @@ const forgotPass = () => {
 forgotPassword.addEventListener('click', forgotPass);
 
 
+const provider = new GoogleAuthProvider();
 
+const loginGoogle = () => {
+    signInWithPopup(auth, provider)
+    .then((result) => {
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        const user = result.user;
+        console.log(user);
+        
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        console.log(errorMessage);
+        
+    });
+    
+}
+
+loginWithGoogle.addEventListener('click', loginGoogle);
 
 
 onAuthStateChanged(auth, (user) => {

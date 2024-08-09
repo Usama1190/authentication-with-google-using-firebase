@@ -72,3 +72,12 @@ body {
 /* .heading {
     color: rgb(156, 156, 156);
 } */
+
+
+
+#loginWithGoogle {
+    padding: 10px;
+    /* border: 1px solid gray; */
+    border-radius: 6px;
+    cursor: pointer;
+}
