@@ -50,5 +50,20 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
+const myAppBody = document.querySelectorAll('.signup_wrapper, .form');
 
-// sdfdfdfs
+console.log(myAppBody);
+
+
+
+
+
+
+
+// const signup_page = {
+//     signup_wrapper: document.getElementById('signup_wrapper'),
+// }
+
+// window.onmousemove(() => {
+//     signup_page.signup_wrapper.classList.add('')
+// })
