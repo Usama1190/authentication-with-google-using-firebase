@@ -50,20 +50,18 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-const myAppBody = document.querySelectorAll('.signup_wrapper, .form');
-
-console.log(myAppBody);
 
 
 
+const app_body = document.getElementById('app_body');
+
+const signup_page = {
+    signup_wrapper: document.getElementById('signup_wrapper'),
+}
 
 
 
 
-// const signup_page = {
-//     signup_wrapper: document.getElementById('signup_wrapper'),
-// }
-
-// window.onmousemove(() => {
-//     signup_page.signup_wrapper.classList.add('')
+// app_body.addEventListener('mousemove', () => {
+//     signup_page.signup_wrapper.classList.add('signup_wrapper');
 // })
