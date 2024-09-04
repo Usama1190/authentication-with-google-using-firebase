@@ -51,17 +51,7 @@ onAuthStateChanged(auth, (user) => {
 });
 
 
-
-
-const app_body = document.getElementById('app_body');
-
-const signup_page = {
-    signup_wrapper: document.getElementById('signup_wrapper'),
+function focusEmail() {
+    userEmail.classList.add('input');
+    alert('hello!')
 }
-
-
-
-
-// app_body.addEventListener('mousemove', () => {
-//     signup_page.signup_wrapper.classList.add('signup_wrapper');
-// })
