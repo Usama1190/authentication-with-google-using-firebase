@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --color-1: #222831;
     --color-2: #31363F;
     --color-3: #76ABAE;
@@ -78,13 +78,13 @@ body {
 .heading1 {
     margin-top: 200px;
     font-size: 50px;
-    /* color: rgb(99, 103, 104); */
+    color: rgb(99, 103, 104);
 }
 
 
 #loginWithGoogle {
     padding: 10px;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
     border-radius: 6px;
     cursor: pointer;
-}
+} */
