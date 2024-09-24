@@ -9,26 +9,34 @@
     <link rel="stylesheet" href="../global.css">
 </head>
 <body>
-    <form class="form borderColor">
-        <h1 class="heading">Login</h1>
+    <div class="container_wrapper">
+        <div class="form_wrapper">
+            <form class="form borderColor">
+                <h1 class="heading">Login</h1>
 
-        <input type="email" id="email" class="input" placeholder="Email"><br><br>
-        
-        <input type="password" id="password" class="input" placeholder="Password"><br><br>
-        
-        <p id="forgotPassword">Forgot password</p>
+                <input type="email" id="email" class="input" placeholder="Email"><br><br>
+                
+                <input type="password" id="password" class="input" placeholder="Password"><br><br>
+                
+                <p id="forgotPassword">Forgot password</p>
 
-        <small id="warning" style="color: rgb(216, 97, 97);"></small><br><br>
+                <small id="warning" style="color: rgb(216, 97, 97);"></small><br><br>
 
-        <button type="submit" id="login_btn" class="btn">Login</button><br><br>
-        
-        <small>Don't have an account please<a href="../signup/index.html"> signup</a></small>
-        
-        <hr style="width: 70%;"><br>
+                <button type="submit" id="login_btn" class="btn">Login</button><br><br>
+                
+                <small>Don't have an account please<a href="../signup/index.html"> signup</a></small>
+                
+                <hr style="width: 70%;"><br>
 
-        <span id="loginWithGoogle" class="borderColor">Login with google</span>
+                <span id="loginWithGoogle" class="borderColor">Login with google</span>
 
-    </form>
+            </form>
+        </div>
+
+        <div class="image_wrapper">
+            <img src="../assets/student-with-laptop1.jpeg" alt="Student with laptop" class="main_image">
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="../firebase.js"></script>
