@@ -14,10 +14,22 @@
             <form class="form borderColor">
                 <h1 class="heading">Login</h1>
 
-                <input type="email" id="email" class="input" placeholder="Email"><br><br>
+                <!-- <input type="email" id="email" class="input" placeholder="Email"><br><br> -->
                 
-                <input type="password" id="password" class="input" placeholder="Password"><br><br>
+                <!-- <input type="password" id="password" class="input" placeholder="Password"><br><br> -->
                 
+
+                <div class="input-group">
+                    <input type="email" class="input" id="userEmail" required>
+                    <label for="username" class="label">Email</label>
+                </div><br>
+
+                <div class="input-group">
+                    <input type="password" class="input" id="userPassword" required>
+                    <label for="username" class="label">Password</label>
+                </div><br>
+
+
                 <p id="forgotPassword">Forgot password</p>
 
                 <small id="warning" style="color: rgb(216, 97, 97);"></small><br><br>
@@ -28,7 +40,7 @@
                 
                 <hr style="width: 70%;"><br>
 
-                <span id="loginWithGoogle" class="borderColor">Login with google</span>
+                <span id="loginWithGoogle" class="">Login with google</span>
 
             </form>
         </div>
