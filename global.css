@@ -1,9 +1,14 @@
 :root {
-    --color-1: #070F2B;
+    /* --color-1: #070F2B;
     --color-2: #1B1A55;
     --color-3: #535C91;
-    --color-4: #9290C3;
+    --color-4: #9290C3; */
     --color-5: #E4F1FF;
+
+    --color-13: #F1F6F9;
+    --color-12: #394867;
+    --color-11: #212A3E;
+    --color-14: #9BA4B5;
 }
 
 body {
@@ -13,17 +18,16 @@ body {
 }
 
 .container_wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
 }
 
 .image_wrapper {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-color: #fff;
 }
 
 .main_image {
@@ -33,24 +37,37 @@ body {
 .form_wrapper {
     height: 99vh;
     width: 50%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-5);
-    background-color: var(--color-1);
+    background-color: var(--color-12);
 }
 
 .form {
-    /* width: 70%; */
     text-align: center;
     border-radius: 10px;
     padding: 20px 12px 20px 12px;
 }
 
-.form1 {
+.form_heading {
+    font-size: 2.5rem;
+}
+
+/* .form1 {
     border-top: 1px solid var(--color-2);
     border-bottom: 1px solid var(--color-2);
+} */
+
+.seperator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seperater_line {
+    width: 40%;
 }
 
 #forgotPassword {
@@ -60,6 +77,15 @@ body {
     color: purple;
     margin-top: -8px;
     margin-left: -98px;
+}
+
+.another_way {
+    font-size: 12px;
+    color: var(--color-13);
+}
+
+.another_way_anchor {
+    color: var(--color-14);
 }
 
 
@@ -75,7 +101,7 @@ body
 {
     font-size: 1.25rem;
     position: relative;
-    color: var(--color-5);
+    color: var(--color-11);
 }
 
 .input
@@ -84,7 +110,7 @@ body
     /* color: #fefefe; */
     text-align: left;
     padding: 1rem;
-    border: 1px solid var(--color-4);
+    border: 1px solid var(--color-11);
     border-radius: 10px;
     transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
@@ -94,21 +120,21 @@ body
     position: absolute;
     top: 1rem;
     left: 1rem;
-    color: #d4d4d4;
+    color: var(--color-14);
     pointer-events: none;
     transition: 350rem cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus
 {
-    border: 1px solid var(--color-5);
+    border: 1px solid var(--color-11);
 }
 
 .input:is(:focus, :valid)~label{
     transform: translateY(-120%) scale(0.7);
-    background-color: var(--color-1);
+    background-color: var(--color-12);
     padding-inline: 0.3rem;
-    color: var(--color-5);
+    color: var(--color-13);
 }
 
 /* Input Fields ends */
@@ -119,15 +145,16 @@ body
     width: 100%;
     padding: 1rem;
     font-weight: 700;
-    color: var(--color-1);
+    color: var(--color-12);
     cursor: pointer;
     border-radius: 10px;
+    transition: all 0.3s;
     border: 1px solid var(--color-5);
 }
 
 .btn:hover {
-    background-color: var(--color-1);
-    border: 1px solid var(--color-5);
+    background-color: var(--color-11);
+    border: 1px solid var(--color-14);
     color: var(--color-5);
 }
 
@@ -153,7 +180,7 @@ body
 #loginWithGoogle {
     width: 100%;
     padding: 1rem;
-    border: 1px solid gray;
+    border: 1px solid var(--color-11);
     border-radius: 10px;
     cursor: pointer;
 }
