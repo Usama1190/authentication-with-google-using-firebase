@@ -55,6 +55,7 @@ const signUp = () => {
     }
     else {
         warning.innerText = "Confirmed password does't matched!";
+        loader.style.display = 'none';
         form.style.opacity = '1';
     }
 }
