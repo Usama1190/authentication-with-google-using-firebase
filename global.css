@@ -71,12 +71,12 @@ body {
 }
 
 #forgotPassword {
-    font-size: 12px;
+    /* font-size: 12px;
     text-decoration: underline;
     cursor: pointer;
     color: purple;
     margin-top: -8px;
-    margin-left: -98px;
+    margin-left: -98px; */
 }
 
 .another_way {
@@ -188,4 +188,11 @@ body {
 .google_logo {
     width: 30px;
     height: 30px;
+}
+
+.forget_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
