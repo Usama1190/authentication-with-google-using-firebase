@@ -20,18 +20,21 @@
                 
 
                 <div class="input-group">
-                    <input type="email" class="input" id="userEmail" required>
+                    <input type="email" class="input" id="email" required>
                     <label for="username" class="label">Email</label>
                 </div><br>
 
                 <div class="input-group">
-                    <input type="password" class="input" id="userPassword" required>
+                    <input type="password" class="input" id="password" required>
                     <label for="username" class="label">Password</label>
                 </div><br>
 
-                <div class="forget_wrapper">
-                    <input type="checkbox">Remember me 
-                    <span id="forgotPassword">Forgot password</span>
+                <div class="checkbox_forget_password_wrapper">
+                    <label for="rememberme">
+                        <input type="checkbox" id="rememberme" class="remember_me_checkbox">
+                        Remember me
+                    </label>
+                    <p id="forgotPassword">Forgot password</p>
                 </div>
 
                 <small id="warning" style="color: rgb(216, 97, 97);"></small><br><br>
@@ -47,7 +50,6 @@
                 </div><br><br>
 
                 <button id="loginWithGoogle" class=""><img src="/assets/google-logo-removebg-preview.png" alt="google logo" class="google_logo"> Login with google</button>
-
             </form>
         </div>
 

@@ -70,15 +70,6 @@ body {
     width: 40%;
 }
 
-#forgotPassword {
-    /* font-size: 12px;
-    text-decoration: underline;
-    cursor: pointer;
-    color: purple;
-    margin-top: -8px;
-    margin-left: -98px; */
-}
-
 .another_way {
     font-size: 12px;
     color: var(--color-13);
@@ -101,7 +92,6 @@ body {
 .input
 {
     all: unset;
-    /* color: #fefefe; */
     text-align: left;
     padding: 1rem;
     border: 1px solid var(--color-11);
@@ -119,9 +109,10 @@ body {
     transition: 350rem cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus
-{
+.input:focus {
     border: 1px solid var(--color-11);
+    background-color: var(--color-12);
+    color: var(--color-13);
 }
 
 .input:is(:focus, :valid)~label{
@@ -190,9 +181,25 @@ body {
     height: 30px;
 }
 
-.forget_wrapper {
+.checkbox_forget_password_wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 12px;
+    /* border: 1px solid black; */
+}
+
+#forgotPassword {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#forgotPassword:hover {
+    opacity: 0.5;
+}
+
+.remember_me_checkbox {
+    accent-color: var(--color-11);
 }
