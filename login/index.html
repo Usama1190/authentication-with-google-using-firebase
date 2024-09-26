@@ -10,47 +10,46 @@
 </head>
 <body>
     <div class="container_wrapper">
-        <div class="form_wrapper">
-            <form class="form borderColor">
-                <h1 class="form_heading">Login</h1>
+        <div class="inner_con_wrapper width50 height99">
+            <div class="form_wrapper width100">
+                <span id="loader"></span>
+                <form class="form borderColor">
+                    <h1 class="form_heading">Login</h1>
+                    <!-- <input type="email" id="email" class="input" placeholder="Email"><br><br> -->
+                    <!-- <input type="password" id="password" class="input" placeholder="Password"><br><br> -->
+                    <div class="input-group">
+                        <input type="email" class="input" id="email" required>
+                        <label for="username" class="label">Email</label>
+                    </div><br>
 
-                <!-- <input type="email" id="email" class="input" placeholder="Email"><br><br> -->
-                
-                <!-- <input type="password" id="password" class="input" placeholder="Password"><br><br> -->
-                
+                    <div class="input-group">
+                        <input type="password" class="input" id="password" required>
+                        <label for="username" class="label">Password</label>
+                    </div><br>
 
-                <div class="input-group">
-                    <input type="email" class="input" id="email" required>
-                    <label for="username" class="label">Email</label>
-                </div><br>
+                    <div class="checkbox_forget_password_wrapper">
+                        <label for="rememberme">
+                            <input type="checkbox" id="rememberme" class="remember_me_checkbox">
+                            Remember me
+                        </label>
+                        <p id="forgotPassword">Forgot password</p>
+                    </div>
 
-                <div class="input-group">
-                    <input type="password" class="input" id="password" required>
-                    <label for="username" class="label">Password</label>
-                </div><br>
+                    <small id="warning" style="color: rgb(216, 97, 97);"></small><br><br>
 
-                <div class="checkbox_forget_password_wrapper">
-                    <label for="rememberme">
-                        <input type="checkbox" id="rememberme" class="remember_me_checkbox">
-                        Remember me
-                    </label>
-                    <p id="forgotPassword">Forgot password</p>
-                </div>
+                    <button type="submit" id="login_btn" class="btn width100">Login</button><br><br>
+                    
+                    <small class="another_way">Don't have an account please <a href="../signup/index.html" class="another_way_anchor">Sign up</a></small><br><br>
+                    
+                    <div class="seperator">
+                        <hr class="seperater_line">
+                        <span>or</span>
+                        <hr class="seperater_line">
+                    </div><br><br>
 
-                <small id="warning" style="color: rgb(216, 97, 97);"></small><br><br>
-
-                <button type="submit" id="login_btn" class="btn">Login</button><br><br>
-                
-                <small class="another_way">Don't have an account please <a href="../signup/index.html" class="another_way_anchor">Sign up</a></small><br><br>
-                
-                <div class="seperator">
-                    <hr class="seperater_line">
-                    <span>or</span>
-                    <hr class="seperater_line">
-                </div><br><br>
-
-                <button id="loginWithGoogle" class=""><img src="/assets/google-logo-removebg-preview.png" alt="google logo" class="google_logo"> Login with google</button>
-            </form>
+                </form>
+            </div>
+            <button id="loginWithGoogle" class=""><img src="/assets/google-logo-removebg-preview.png" alt="google logo" class="google_logo"> Login with google</button>
         </div>
 
         <div class="image_wrapper">

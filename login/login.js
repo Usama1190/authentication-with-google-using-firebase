@@ -9,6 +9,10 @@ let forgotPassword = document.getElementById('forgotPassword');
 let warning = document.getElementById('warning');
 
 let login_btn = document.getElementById('login_btn');
+let form = document.getElementById('form');
+
+let loader = document.getElementById('loader');
+loader.style.display = 'none';
 
 
 let loginWithGoogle = document.getElementById('loginWithGoogle');
@@ -16,12 +20,16 @@ let loginWithGoogle = document.getElementById('loginWithGoogle');
 const login = () => {
     event.preventDefault();
 
-    login_btn.innerText = 'Loading...';
+    // login_btn.innerText = 'Loading...';
+    loader.style.display = 'block';
+    form.style.opacity = '0.3';
 
     signInWithEmailAndPassword(auth, loginEmail.value, loginPassword.value)
     .then((userCredential) => {
         // Signed in 
-        login_btn.innerText = 'Login';
+        // login_btn.innerText = 'Login';
+        loader.style.display = 'none';
+        form.style.opacity = '1';
 
         const user = userCredential.user;
         console.log(user);
@@ -35,7 +43,9 @@ const login = () => {
         }).showToast();
     })
     .catch((error) => {
-        login_btn.innerText = 'Login';
+        // login_btn.innerText = 'Login';
+        loader.style.display = 'none';
+        form.style.opacity = '1';
 
         const errorCode = error.code;
         const errorMessage = error.message;

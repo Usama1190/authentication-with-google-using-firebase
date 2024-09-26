@@ -6,15 +6,18 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global.css">
 </head>
 <body>
-    <div class="navbar borderColor">
-        <span>Dashboard</span>
-        <span id="logout" class="btn">LogOut</span>
-    </div>
+    <div class="dashboard_wrapper">
+        <div class="navbar_wrapper">
+            <span>Dashboard</span>
+            <button id="logout" class="btn">LogOut</button>
+        </div>
 
-    <h1 class="heading1">Welcome to your Dashboard!</h1>
+        <h1 class="heading1">Welcome to your Dashboard!</h1>
+        <h2>Developed By : <a href="https://www.linkedin.com/in/usama-israr-khan-3b68312ab/" class="link" title="Linkedin Profile" target="_blank">Usama Israr</a></h2>
+    </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="../firebase.js"></script>
